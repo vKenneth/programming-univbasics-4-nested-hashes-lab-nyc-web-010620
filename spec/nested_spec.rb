@@ -20,6 +20,13 @@ describe "nested hash" do
       expect(dennis_ritchies_language).to eq("C")
     end
   end
+describe "nested hash" do
+   describe "hopper" do
+     it "operates on the programmer_hash and returns the value of the :grace_hopper key" do
+       expect(hopper).to eq({:known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]})
+
+     end
+   end
 
 
 
