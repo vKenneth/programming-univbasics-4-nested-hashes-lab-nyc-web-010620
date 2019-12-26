@@ -20,6 +20,15 @@ describe "nested hash" do
       expect(dennis_ritchies_language).to eq("C")
     end
   end
+describe "nested hash" do
+   describe "hopper" do
+     it "operates on the programmer_hash and returns the value of the :grace_hopper key" do
+       expect(hopper).to eq({:known_for => "COBOL", :languages => ["COBOL", "FORTRAN"]})
+
+     end
+   end
+
+
 
   describe "adding_matz" do 
     it "operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash" do
@@ -39,3 +48,16 @@ describe "nested hash" do
     end
   end
 end
+
+# good example
+ 
+my_hash = {first: "I'm first!", second: "I'm second!"}
+my_hash[:third] = "I'm third!"
+ 
+puts my_hash
+# > {first: "I'm first!", second: "I'm second!", third: "I'm third!"}
+# bad example
+ 
+my_hash = {first: "I'm first!", second: "I'm second!"}
+my_hash = {first: "I'm first!", second: "I'm second!", third: "I'm third!"}
+
