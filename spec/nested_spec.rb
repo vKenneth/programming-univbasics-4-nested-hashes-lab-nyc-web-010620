@@ -42,7 +42,3 @@ describe "nested hash" do
   end
 end
 
-# bad example
- 
-my_hash = {first: "I'm first!", second: "I'm second!"}
-my_hash = {first: "I'm first!", second: "I'm second!", third: "I'm third!"}
